@@ -1,0 +1,36 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.wrapper {
+   max-width: 98vw;
+   margin: 0 auto;
+}
+
+table {
+   width: 100%;
+   margin: 0 auto;
+   border-spacing: 0;
+}
+
+table,
+th,
+td {
+   border: 1px solid black;
+}
+
+th,
+td {
+   padding: 5px 20px;
+}
+
+.shiftOne {
+   width: 120px;
+}
+
+td.shiftOne{
+   background-color: aqua;
+}
+
