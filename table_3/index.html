@@ -9,112 +9,414 @@
 </head>
 
 <body>
+
+   <table class="header-table">
+      <tr>
+         <th>Nr linii</th>
+         <th>Nr tłoka</th>
+         <th>Zakładany cykl [s]</th>
+         <th colspan="2">Cel</th>
+         <th colspan="2">Prognoza wykonania</th>
+         <th>Wykonanie celu</th>
+      </tr>
+      <tr>
+         <td>GL1</td>
+         <td>83N150BD22</td>
+         <td>19</td>
+         <td>1512</td>
+         <td>100%</td>
+         <td>1396</td>
+         <td>92%</td>
+         <td>1217</td>
+      </tr>
+   </table>
+
    <div class="wrapper">
+      <!-- I zmiana -->
       <table>
-         <tr>
-            <th class='shiftOne'>Zmiana</th>
-            <th>Czas</th>
-            <th>Cel</th>
-            <th>Spływ</th>
-            <th>Skumulowane</th>
-            <th>Wydajność[%]</th>
-            <th>BR</th>
-            <th>BM</th>
-            <th>Straty</th>
-            <th>Uwagi</th>
-         </tr>
-         <tr>
-            <td class='shiftOne' rowspan="8">Zmiana I</td>
-            <td>00:07 - 00:08</td>
-            <td>189</td>
-            <td>185</td>
-            <td>185</td>
-            <td>97,8</td>
-            <td>0</td>
-            <td>2</td>
-            <td>N10</td>
-            <td>komentarz</td>
-         </tr>
-         <tr>
-            <td>00:08 - 00:09</td>
-            <td>189</td>
-            <td>185</td>
-            <td>185</td>
-            <td>97,8</td>
-            <td>0</td>
-            <td>2</td>
-            <td>N10</td>
-            <td>komentarz</td>
-         </tr>
-         <tr>
-            <td>00:09 - 00:10</td>
-            <td>189</td>
-            <td>185</td>
-            <td>185</td>
-            <td>97,8</td>
-            <td>0</td>
-            <td>2</td>
-            <td>N10</td>
-            <td>komentarz</td>
-         </tr>
-         <tr>
-            <td>00:07 - 00:08</td>
-            <td>189</td>
-            <td>185</td>
-            <td>185</td>
-            <td>97,8</td>
-            <td>0</td>
-            <td>2</td>
-            <td>N10</td>
-            <td>komentarz</td>
-         </tr>
-         <tr>
-            <td>00:07 - 00:08</td>
-            <td>189</td>
-            <td>185</td>
-            <td>185</td>
-            <td>97,8</td>
-            <td>0</td>
-            <td>2</td>
-            <td>N10</td>
-            <td>komentarz</td>
-         </tr>
-         <tr>
-            <td>00:07 - 00:08</td>
-            <td>189</td>
-            <td>185</td>
-            <td>185</td>
-            <td>97,8</td>
-            <td>0</td>
-            <td>2</td>
-            <td>N10</td>
-            <td>komentarz</td>
-         </tr>
-         <tr>
-            <td>00:07 - 00:08</td>
-            <td>189</td>
-            <td>185</td>
-            <td>185</td>
-            <td>97,8</td>
-            <td>0</td>
-            <td>2</td>
-            <td>N10</td>
-            <td>komentarz</td>
-         </tr>
-         <tr>
-            <td>00:07 - 00:08</td>
-            <td>189</td>
-            <td>185</td>
-            <td>185</td>
-            <td>97,8</td>
-            <td>0</td>
-            <td>2</td>
-            <td>N10</td>
-            <td>komentarz</td>
-         </tr>
-
-
+         <thead class="shiftOne">
+            <tr>
+               <th class="shiftOne">Zmiana</th>
+               <th class="time">Czas</th>
+               <th class="target">Cel</th>
+               <th class="flow">Spływ</th>
+               <th class="cumulative">Skumulowane</th>
+               <th class="productivity">Wydajność[%]</th>
+               <th class="scrapProduction">BR</th>
+               <th class="scrapMaterial">BM</th>
+               <th>Straty</th>
+               <th>Uwagi</th>
+            </tr>
+         </thead>
+         <tbody class="tbShift">
+            <tr>
+               <td class="shift shiftOne" rowspan="8">1</td>
+               <td>07:00 - 08:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>08:00 - 09:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>09:00 - 10:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>10:00 - 11:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>11:00 - 12:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>12:00 - 13:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>13:00 - 14:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>14:00 - 15:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+         </tbody>
+         <tfoot class="shiftOne">
+            <tr class="summaryShift">
+               <td>Razem</td>
+               <td> 1 zmiana</td>
+               <td>1512</td>
+               <td>1116</td>
+               <td>1116</td>
+               <td>74%</td>
+               <td></td>
+               <td>16</td>
+               <td colspan="2"></td>
+            </tr>
+         </tfoot>
       </table>
+      <!-- Druga zmiana -->
+      <table>
+         <thead class="shiftTwo">
+            <tr>
+               <th class="shiftTwo">Zmiana</th>
+               <th class="time">Czas</th>
+               <th class="target">Cel</th>
+               <th class="flow">Spływ</th>
+               <th class="cumulative">Skumulowane</th>
+               <th class="productivity">Wydajność[%]</th>
+               <th class="scrapProduction">BR</th>
+               <th class="scrapMaterial">BM</th>
+               <th>Straty</th>
+               <th>Uwagi</th>
+            </tr>
+         </thead>
+         <tbody class="tbShift">
+            <tr>
+               <td class="shift shiftTwo" rowspan="8">2</td>
+               <td>15:00 - 16:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>16:00 - 17:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>17:00 - 18:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>18:00 - 19:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>19:00 - 20:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>20:00 - 21:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>21:00 - 22:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>22:00 - 23:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+         </tbody>
+         <tfoot class="shiftTwo">
+            <tr class="summaryShift">
+               <td>Razem</td>
+               <td> 2 zmiana</td>
+               <td>1512</td>
+               <td>1116</td>
+               <td>1116</td>
+               <td>74%</td>
+               <td></td>
+               <td>16</td>
+               <td colspan="2"></td>
+            </tr>
+         </tfoot>
+      </table>
+      <!-- Trzecia zmiana -->
+      <table>
+         <thead class="shiftThree">
+            <tr>
+               <th class="shiftThree">Zmiana</th>
+               <th class="time">Czas</th>
+               <th class="target">Cel</th>
+               <th class="flow">Spływ</th>
+               <th class="cumulative">Skumulowane</th>
+               <th class="productivity">Wydajność[%]</th>
+               <th class="scrapProduction">BR</th>
+               <th class="scrapMaterial">BM</th>
+               <th>Straty</th>
+               <th>Uwagi</th>
+            </tr>
+         </thead>
+         <tbody class="tbShift">
+            <tr>
+               <td class="shift shiftThree" rowspan="8">3</td>
+               <td>23:00 - 00:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>00:00 - 01:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>01:00 - 02:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>02:00 - 03:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>03:00 - 04:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>04:00 - 05:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>05:00 - 06:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+            <tr>
+               <td>06:00 - 07:00</td>
+               <td>189</td>
+               <td>185</td>
+               <td>185</td>
+               <td>97,8</td>
+               <td>0</td>
+               <td>2</td>
+               <td class="losses">N10</td>
+               <td class="comments">komentarz</td>
+            </tr>
+         </tbody>
+         <tfoot class="shiftThree">
+            <tr class="summaryShift">
+               <td>Razem</td>
+               <td> 3 zmiana</td>
+               <td>1512</td>
+               <td>1116</td>
+               <td>1116</td>
+               <td>74%</td>
+               <td>0</td>
+               <td>16</td>
+               <td colspan="2"></td>
+            </tr>
+         </tfoot>
+      </table>
+
+      <!-- <table class="summary">
+         <tbody>
+            <tr>
+               <th class="shiftThree" rowspan="2">Suma</th>
+               <th class="target">Cel</th>
+               <th class="flow">Spływ</th>
+               <th class="cumulative">Skumulowane</th>
+               <th class="productivity">Wydajność[%]</th>
+               <th class="scrapProduction">BR</th>
+               <th class="scrapMaterial">BM</th>
+            </tr>
+            <tr>
+               <td>4516</td>
+               <td>3898</td>
+               <td>3898</td>
+               <td>92%</td>
+               <td></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table> -->
    </div>
 </body>
 
